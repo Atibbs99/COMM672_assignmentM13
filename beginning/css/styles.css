@@ -258,9 +258,15 @@ body.home {
     text-decoration: none;
     cursor: pointer;
 }
-.modal:target {
-    display: block;
+
+.open-modal-btn {
+    border: none;
+    border-radius: 10px;
 }
+.open-modal-btn:hover {
+    background-color: #e1dfdf;
+}
+
 .careers-container {
     margin-bottom: 50px;
 }
