@@ -9,4 +9,15 @@ $(document).ready(function() {
     $('.close-btn').click(function() {
         $(this).closest('.modal').hide();
     })
-})
+
+    //Open Accordion
+    $('.accordion-header').click(function() {
+        if ($(this).next('.accordion-content').is
+        (':visible')) {
+            $(this).next('.accordion-content').slideUp();
+        } else {
+            $('.accordion-content').slideUp();
+            $(this).next('.accordion-content').slideDown();
+        }  
+    });
+});

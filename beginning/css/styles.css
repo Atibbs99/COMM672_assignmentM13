@@ -349,6 +349,9 @@ ul.paw-list li::before {
     top: 0; 
     color: #333; 
 }
+
+/**Accordion**/
+
 .accordion {
     max-width: 700px;
     margin: 0 auto;
@@ -376,19 +379,14 @@ ul.paw-list li::before {
     background-color: #eee;
 }  
 .accordion-content {
-    max-height: 0;
-    overflow: hidden;
+    display: none;
     background-color: #fff;
     padding: 0 15px;
-    transition: max-height 0.3s ease, padding 0.3s ease;
 }  
 .accordion-content p {
     margin: 15px 0;
 }  
-.accordion-checkbox:checked ~ .accordion-content {
-    max-height: 200px;
-    padding: 15px;
-}   
+
 /**Contact**/
 .contact-container {
     display: flex;
