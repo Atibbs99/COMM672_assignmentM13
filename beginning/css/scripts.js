@@ -20,4 +20,13 @@ $(document).ready(function() {
             $(this).next('.accordion-content').slideDown();
         }  
     });
+
+    //Back to Top Button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#backToTopBtn').fadeIn();
+        } else {
+            $('#backToTopBtn').fadeOut();
+        }
+    })
 });
